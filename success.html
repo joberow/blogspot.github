@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SUCCESS INSCRPTION</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="photo_2023-10-13_17-36-15.jpg" rel="shortcut icon" type="image/x-icon">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="success.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_Heading1').addClass('visibility-hidden');
+   function onScrollHeading1()
+   {
+      var $obj = $("#wb_Heading1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Heading1', 'vanish-in', 100, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Heading1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Heading1').inViewPort(true))
+   {
+      $('#wb_Heading1').addClass("in-viewport");
+   }
+   onScrollHeading1();
+   $(window).scroll(function(event)
+   {
+      onScrollHeading1();
+   });
+});
+</script>
+</head>
+<body>
+ <div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Image1">
+<img src="images/jobex-logo (1).png" id="Image1" alt="" width="206" height="52"></div>
+<div id="wb_Heading1">
+<h1 id="Heading1">تم التسجيل بنجاج </h1></div>
+<div id="Layer2">
+<div id="wb_Image2">
+<img src="images/icons8-success.gif" id="Image2" alt="" width="48" height="48"></div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:15px;"><strong>سيتم الاتصال بك&nbsp; فور تاكد من جميع المعلومات<br> <br>لتذكير ممكن الامر ياخد عدة ايام&nbsp; لكترت الطلبات التي نتوصل بها <br><br>تاكد من ان </strong></span><span style="color:#FF0000;font-family:Arial;font-size:15px;"><strong>البريد الالكتروني </strong></span><span style="color:#000000;font-family:Arial;font-size:15px;"><strong>الذي قمت بتسجيل به صحيح&nbsp; لانه<br> <br>امر مهم جدا لكي نراسلك بقبولك في عقد العمل ام لا <br><br>بتوفيق</strong></span></div>
+<a id="Button1" href="https://joberow.blogspot.com/">رجوع للموقع</a>
+</div>
+</div>
+</div>
+</body>
+</html>
